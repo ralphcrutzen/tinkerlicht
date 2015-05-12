@@ -114,4 +114,5 @@ screams = [
     'Yeehaa!',
     'Yo!',
     'You did it!',
-    'Zo hey!']
+    'Zo hey!',
+    'Zonne grote vuurbal jongûh! BAM!']
