@@ -70,6 +70,7 @@ screams = [
     'Ongelofelijk!',
     'Oooh!',
     'Perfect!',
+    'Prachtig allemachtig!',
     'Pretty!',
     'Sapperloot!',
     'Scream in awe!',
