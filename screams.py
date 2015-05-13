@@ -85,6 +85,7 @@ screams = [
     'Spread the word!',
     'Stoer!',
     'Stop. Hammertime!',
+    'Super!',
     'Superb!',
     'Sweet!',
     'Tadaa!',
@@ -113,6 +114,7 @@ screams = [
     'Yesss!',
     'Yeehaa!',
     'Yo!',
+    'YOLO!',
     'You did it!',
     'Zo hey!',
     'Zonne grote vuurbal jonguh! BAM!']
