@@ -115,4 +115,4 @@ screams = [
     'Yo!',
     'You did it!',
     'Zo hey!',
-    'Zonne grote vuurbal jongûh! BAM!']
+    'Zonne grote vuurbal jonguh! BAM!']
