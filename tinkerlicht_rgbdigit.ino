@@ -50,6 +50,8 @@ void setup() {
   Bridge.put("auto", "0");
   //debugprintln("Done.");
 
+  rgbDigit.begin();
+  
   initTime();
 
   rgbDigit.setBrightness(16);
@@ -78,24 +80,25 @@ void loop() {
 
 void initTime() {
   int hours, minutes, seconds, days, months, years;
+  String timeString;
   p.begin("date");
   p.addParameter("+%T-%D"); // hh:mm:ss-mm/dd/yy
   p.run();
   while (p.available()>0) {
-    String timeString = p.readString();    
-    int firstColon = timeString.indexOf(":");
-    int secondColon = timeString.lastIndexOf(":");
-    int dash = timeString.lastIndexOf("-");
-    int firstSlash = timeString.indexOf("/");
-    int secondSlash = timeString.lastIndexOf("/");
-    hours = timeString.substring(0, firstColon).toInt();
-    minutes = timeString.substring(firstColon + 1, secondColon).toInt();
-    seconds = timeString.substring(secondColon + 1, dash).toInt();
-    months = timeString.substring(dash + 1, firstSlash).toInt();
-    days = timeString.substring(firstSlash + 1, secondSlash).toInt();
-    years = timeString.substring(secondSlash).toInt();
-  }
-  rgbDigit.begin();
+    char c = p.read();
+    timeString += c;
+  } 
+  int firstColon = timeString.indexOf(":");
+  int secondColon = timeString.lastIndexOf(":");
+  int dash = timeString.lastIndexOf("-");
+  int firstSlash = timeString.indexOf("/");
+  int secondSlash = timeString.lastIndexOf("/");
+  hours = timeString.substring(0, firstColon).toInt();
+  minutes = timeString.substring(firstColon + 1, secondColon).toInt();
+  seconds = timeString.substring(secondColon + 1, dash).toInt();
+  months = timeString.substring(dash + 1, firstSlash).toInt();
+  days = timeString.substring(firstSlash + 1, secondSlash).toInt();
+  years = timeString.substring(secondSlash).toInt();
   rgbDigit.setTimeDate(hours, minutes, seconds, days, months, years);  
 }
 
