@@ -1,7 +1,9 @@
 # TinkerLicht
 
 Change the colors of and RGB led strip or RGBDigit via Twitter or Facebook.
+
 You can read the project description (in Dutch) here: http://tinkerlicht.crutzen.eu.
+
 A more technical, but outdated, description of "Twitmaslights" (the predecessor of TinkerLicht) can be found here: http://blog.crutzen.eu/2013/12/13/twitmaslights-use-an-arduino-yun-to-control-colored-led-lights-with-twitter/
 
 ## Arduino sketches
