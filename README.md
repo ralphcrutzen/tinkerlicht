@@ -1,13 +1,15 @@
 # TinkerLicht
 
-You can read the project description (in Dutch) here: http://tinkerlicht.crutzen.eu
+Change the colors of and RGB led strip or RGBDigit via Twitter or Facebook.
+You can read the project description (in Dutch) here: http://tinkerlicht.crutzen.eu.
+A more technical, but outdated, description of "Twitmaslights" (the predecessor of TinkerLicht) can be found here: http://blog.crutzen.eu/2013/12/13/twitmaslights-use-an-arduino-yun-to-control-colored-led-lights-with-twitter/
 
 ## Arduino sketches
 #### tinkerlicht.ino
 The Arduino sketch to use TinkerLicht with an RGB led strip.
 
 #### tinkerlicht_rgbdigit.ino
-The Arduino sketch to use TinkerLicht with an RGBDigit shield (see http://www.rgbdigit.com).
+The Arduino sketch to use TinkerLicht with an RGBDigit shield.
 
 ## Python programs
 #### tinkerlicht-parse-fb.py
