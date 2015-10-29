@@ -133,13 +133,16 @@ def changeSingleColor(command):
         tweetMessage(status)
     else:
         hexColor = toHex(command)
+        if command == 'random':
+            name = colors.htmlColors.keys()[randint(0, len(colors.htmlColors))]
+            hexColor = toHex(name)
         if hexColor != 'xColor':
             bridge.put('color1', hexColor)
             bridge.put('color2', hexColor)
             bridge.put('newColor', '1')
             if command == 'random':
                 status = screams[randint(0, len(screams))] + ' ' + user + \
-                    ' geeft het @TinkerLicht de willekeurige kleur ' + hexColor + \
+                    ' geeft het @TinkerLicht de willekeurige kleur ' + name + \
                     '.'
             else:
                 status = screams[randint(0, len(screams))] + ' ' + user + \
@@ -157,9 +160,15 @@ def changeSingleColor(command):
 
 def changeDoubleColor(command):
     color1 = getColor1(command)
-    color2 = getColor2(command)
     hexColor1 = toHex(color1)
+    if color1 == 'random':
+        name1 = colors.htmlColors.keys()[randint(0, len(colors.htmlColors))]
+        hexColor1 = toHex(name1)
+    color2 = getColor2(command)
     hexColor2 = toHex(color2)
+    if color2 == 'random':
+        name2 = colors.htmlColors.keys()[randint(0, len(colors.htmlColors))]
+        hexColor2 = toHex(name2)
     if hexColor1 != 'xColor' and hexColor2 != 'xColor':
         bridge.put('color1', hexColor1)
         bridge.put('color2', hexColor2)
@@ -167,12 +176,12 @@ def changeDoubleColor(command):
         status = screams[randint(0, len(screams))] + ' ' + user + \
             ' maakt het @TinkerLicht '
         if color1 == 'random':
-            status = status + 'de willekeurige kleur ' + hexColor1
+            status = status + 'de willekeurige kleur ' + name1
         else:
             status = status + color1
         status = status + ' en '
         if color2 == 'random':
-            status = status + 'de willekeurige kleur ' + hexColor2 + '.'
+            status = status + 'de willekeurige kleur ' + name2 + '.'
         else:
             status = status + color2 + '.'
         bridge.put('message', status)
@@ -189,13 +198,15 @@ def tweetScream():
 
 
 def tweetStartup():
-    hexColor1 = toHex('random')
-    hexColor2 = toHex('random')
+    name1 = colors.htmlColors.keys()[randint(0, len(colors.htmlColors))]
+    name2 = colors.htmlColors.keys()[randint(0, len(colors.htmlColors))]
+    hexColor1 = toHex(name1)
+    hexColor2 = toHex(name2)
     bridge.put('color1', hexColor1)
     bridge.put('color2', hexColor2)
     bridge.put('newColor', '1')
     m = screams[randint(0, len(screams))] + ' TinkerLicht is weer online ' +\
-        'met de kleuren ' + hexColor1 + ' en ' + hexColor2 +\
+        'met de kleuren ' + name1 + ' en ' + name2 +\
         '. Meer info: http://tinkerlicht.crutzen.eu'
     bridge.put('message', m)
 
@@ -208,13 +219,15 @@ def tweetMessage(status):
 
 
 def tweetAuto():
-    hexColor1 = toHex('random')
-    hexColor2 = toHex('random')
+    name1 = colors.htmlColors.keys()[randint(0, len(colors.htmlColors))]
+    name2 = colors.htmlColors.keys()[randint(0, len(colors.htmlColors))]
+    hexColor1 = toHex(name1)
+    hexColor2 = toHex(name2)
     bridge.put('color1', hexColor1)
     bridge.put('color2', hexColor2)
     bridge.put('newColor', '1')
     m = screams[randint(0, len(screams))] + ' Automatisch ingesteld op ' +\
-        'de kleuren ' + hexColor1 + ' en ' + hexColor2 + '.'
+        'de kleuren ' + name1 + ' en ' + name2 + '.'
     bridge.put('message', m)
 
 
