@@ -1,0 +1,5 @@
+facebook_page_access_token = ''
+twitter_app_key = ''
+twitter_app_secret = ''
+twitter_oauth_token = ''
+twitter_oath_token_secret = ''
