@@ -81,7 +81,7 @@ screams = [
     'Joepie!',
     'Jump!',
     'Kanonne!',
-    'Kedeng!'
+    'Kedeng!',
     'Keep calm and command TinkerLicht!',
     'Kicken!',
     'Kicks!',
