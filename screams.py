@@ -55,6 +55,7 @@ screams = [
     'Give it to me baby!',
     'Go ahead. Make my day.',
     'Go crazy!',
+    'Godnondeju!',
     'Goeie grutten!',
     'Goeiedag zeg!',
     'Good!',
