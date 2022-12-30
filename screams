@@ -1,4 +1,4 @@
-screams = [
+[
     ':-D',
     '1337!',
     '3... 2... 1... Liftoff!',
@@ -66,7 +66,6 @@ screams = [
     'Hatseflats!',
     'Hatsekidee!',
     'Here we go!',
-    'Hendig kicks of wat hey!',
     'Het is echt zo!',
     'Hieperdepiep hoera!',
     'High five!',
@@ -168,8 +167,8 @@ screams = [
     'Vette shizzle!',
     'W00t!',
     'Waar is dat feestje?!',
+    'Wak!',
     'Wakkabakkaboe!',
-    
     'Wat een baas!',
     'Wat een held!',
     'Wat doe je met me?!',
@@ -197,4 +196,5 @@ screams = [
     'You did it!',
     'Zo hey!',
     'Zo zo!',
-    'Zonne grote vuurbal jonguh! BAM!']
+    'Zonne grote vuurbal jonguh! BAM!'
+]
