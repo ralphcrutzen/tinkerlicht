@@ -20,3 +20,5 @@ Software:
 
 To do:
 - Dynamically set the Access Token properties of the Mastodon nodes. After this, I can publish the flow to this repository.
+
+![flow screenshot](https://raw.githubusercontent.com/ralphcrutzen/tinkerlicht/master/flow-screenshot.png)
