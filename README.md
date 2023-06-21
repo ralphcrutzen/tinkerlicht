@@ -5,12 +5,12 @@ Directly after tooting, the bot replies with a picture of the lights in the new 
 
 Example: https://botsin.space/@tinkerlicht
 
-"Screams" are automatically imported to the Node-Red flow from the screams file in this repo. So you can add your own slogan and make a pull reqest to add yuor own funny quote ;-)
+"Screams" are automatically imported to the Node-Red flow from the screams file in this repo. So you can add your own slogan and make a pull reqest to add your own funny quote ;-)
 
 Hardware:
 - Raspberry Pi (Zero W)
 - Raspberry Pi Camera
-- Led strip
+- RGB Led strip
 
 Software:
 - Node-Red
